@@ -8,12 +8,12 @@ class KalmanFilter {
   /**
    * Constructor
    */
-  KalmanFilter();
+  KalmanFilter() = default;
 
   /**
    * Destructor
    */
-  virtual ~KalmanFilter();
+  virtual ~KalmanFilter() = default;
 
   /**
    * Init Initializes Kalman filter

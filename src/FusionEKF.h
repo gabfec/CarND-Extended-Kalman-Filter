@@ -19,7 +19,7 @@ class FusionEKF {
   /**
    * Destructor.
    */
-  virtual ~FusionEKF();
+  virtual ~FusionEKF() = default;
 
   /**
    * Run the whole flow of the Kalman Filter from here.
@@ -44,6 +44,7 @@ class FusionEKF {
   Eigen::MatrixXd R_radar_;
   Eigen::MatrixXd H_laser_;
   Eigen::MatrixXd Hj_;
+
 };
 
 #endif // FusionEKF_H_
